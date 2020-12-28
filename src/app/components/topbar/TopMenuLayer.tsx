@@ -7,9 +7,9 @@ import { UserPreferences } from "app/UserPreferences";
 import { Translation } from "@alethio/cms";
 import { MobileMenuItem } from "@alethio/ui/lib/layout/topbar/MobileMenuItem";
 import { MobileMenuLayer } from "@alethio/ui/lib/layout/topbar/MobileMenuLayer";
-import { ExternalLink } from "@alethio/ui/lib/control/ExternalLink";
-import { ToolbarIconButton } from "@alethio/ui/lib/layout/toolbar/ToolbarIconButton";
-import { BriefcaseIcon } from "@alethio/ui/lib/icon/BriefcaseIcon";
+// import { ExternalLink } from "@alethio/ui/lib/control/ExternalLink";
+// import { ToolbarIconButton } from "@alethio/ui/lib/layout/toolbar/ToolbarIconButton";
+// import { BriefcaseIcon } from "@alethio/ui/lib/icon/BriefcaseIcon";
 
 export interface ITomMenuLayerProps {
     open: boolean;
@@ -38,11 +38,11 @@ export class TopMenuLayer extends React.Component<ITomMenuLayerProps> {
                     onLocaleChange={this.onClose}
                 />
             </MobileMenuItem>
-            <MobileMenuItem title={tr.get("toolbar.alethio.label")}>
+            {/* <MobileMenuItem title={tr.get("toolbar.alethio.label")}>
                 <ExternalLink href="https://company.aleth.io" rel="noopener noreferrer">
                     <ToolbarIconButton Icon={BriefcaseIcon} />
                 </ExternalLink>
-            </MobileMenuItem>
+            </MobileMenuItem> */}
         </MobileMenuLayer>;
     }
 

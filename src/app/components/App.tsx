@@ -4,7 +4,7 @@ import { ITheme } from "@alethio/explorer-ui/lib/ITheme";
 import { createPalette } from "@alethio/explorer-ui/lib/theme/createPalette";
 import { createTheme } from "@alethio/explorer-ui/lib/theme/createTheme";
 import { Link, Cms, Translation } from "@alethio/cms";
-import { ExternalLink } from "@alethio/ui/lib/control/ExternalLink";
+// import { ExternalLink } from "@alethio/ui/lib/control/ExternalLink";
 import { AppConfig } from "app/AppConfig";
 import { observer } from "mobx-react";
 import { Toolbar } from "@alethio/ui/lib/layout/toolbar/Toolbar";
@@ -25,8 +25,8 @@ import { UserPreferences } from "app/UserPreferences";
 import { LanguageSwitcher } from "app/components/toolbar/LanguageSwitcher";
 import { ErrorPage } from "app/components/ErrorPage";
 import { ErrorBox } from "@alethio/ui/lib/ErrorBox";
-import { ToolbarIconButton } from "@alethio/ui/lib/layout/toolbar/ToolbarIconButton";
-import { BriefcaseIcon } from "@alethio/ui/lib/icon/BriefcaseIcon";
+// import { ToolbarIconButton } from "@alethio/ui/lib/layout/toolbar/ToolbarIconButton";
+// import { BriefcaseIcon } from "@alethio/ui/lib/icon/BriefcaseIcon";
 
 const ToolbarWrapper = styled.div`
     flex-shrink: 0;
@@ -106,11 +106,11 @@ export class App extends React.Component<IAppProps> {
                                 translation={translation}
                                 userPreferences={this.props.userPreferences}
                             />
-                            <ToolbarItem title={translation.get("toolbar.alethio.label")} >
+                            {/* <ToolbarItem title={translation.get("toolbar.alethio.label")} >
                                 <ExternalLink href="https://company.aleth.io" rel="noopener noreferrer">
                                     <ToolbarIconButton Icon={BriefcaseIcon} />
                                 </ExternalLink>
-                            </ToolbarItem>
+                            </ToolbarItem> */}
                         </Toolbar>
                     </ToolbarWrapper>
                     <Page>
