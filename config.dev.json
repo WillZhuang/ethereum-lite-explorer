@@ -8,14 +8,9 @@
     "plugins": [{
         "uri": "plugin://aleth.io/eth-common"
     }, {
-        "uri": "plugin://aleth.io/3box",
-        "config": {
-            "ipfsUrlMask": "https://ipfs.infura.io/ipfs/%s"
-        }
-    }, {
         "uri": "plugin://aleth.io/eth-lite",
         "config": {
-            "nodeUrl": "http://127.0.0.1:7545"
+            "nodeUrl": "http://127.0.0.1:8545"
         }
     }],
 
