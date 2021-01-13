@@ -26,7 +26,7 @@ app.use(`${basePath}plugins`, express.static(path.resolve("../dist/plugins"), { 
 // Fallback for HTML 5 routing
 app.use(`${basePath}*`, (req, res) => res.sendFile(path.resolve("../dist/index.html")));
 
-let server = app.listen(Number(process.env.PORT) || 3001, process.env.HOST || "127.0.0.1", async () => {
+let server = app.listen(Number(process.env.PORT) || 3000, process.env.HOST || "127.0.0.1", async () => {
     let address = server.address() as AddressInfo;
     process.stdout.write(`Listening on ${address.address + ":" + address.port}\n`);
 
